@@ -412,3 +412,155 @@ footer p {
     color: #cccccc;
     margin-top: 10px;
 }
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    /* Menu mobile */
+    .menu {
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .menu-list {
+        padding: 15px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .menu-list li {
+        margin: 8px 0;
+    }
+
+    .menu-list a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Contenu principal */
+    .main-content {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .container .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Images de profil */
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    /* Titres */
+    h1 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    /* Paragraphes */
+    p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    /* Boutons */
+    .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        min-height: 44px; /* Touch target */
+    }
+
+    /* Cartes */
+    .card {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        min-height: 40px;
+    }
+
+    /* Galerie */
+    .gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Boutons flottants */
+    #themeBtn, #scrollTopBtn {
+        padding: 12px;
+        font-size: 18px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    /* Footer */
+    footer {
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    .social-links a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .gallery img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu-list {
+        width: 90%;
+    }
+}
