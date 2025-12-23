@@ -60,3 +60,43 @@ body {
             color: #1e90ff;
             text-decoration: none;
         }
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        max-width: 320px;
+        padding: 25px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .login-box input {
+        padding: 12px;
+        font-size: 16px; /* Empêche le zoom sur iOS */
+        min-height: 44px;
+    }
+
+    .login-box input[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+        min-height: 44px;
+    }
+
+    .login-box p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .login-box h2 {
+        font-size: 18px;
+    }
+}
