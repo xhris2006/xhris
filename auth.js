@@ -45,3 +45,13 @@ window.login = function () {
     })
     .catch(err => alert(err.message));
 };
+
+firebase.auth().onAuthStateChanged(user => {
+    if(user){
+        window.location.href = "../index.html"; // page d'accueil
+    } else {
+        window.location.href = "pages/login.html"; // page de connexion
+    }
+});
+
+
