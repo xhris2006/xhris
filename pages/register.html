@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Inscription au portfolio</h2>
+
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Nom" required>
+        <input type="email" id="email" placeholder="Adresse email" required>
+        <input type="password" id="password" placeholder="Mot de passe" required>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+</div>
+
+<script type="module">
+    import "../auth.js";
+
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // 🚫 empêche le reload
+        signup(); // 🔥 Firebase
+    });
+</script>
+
+</body>
+</html>
