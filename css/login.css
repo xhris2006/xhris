@@ -68,3 +68,43 @@ body {
 .register-link a:hover {
     text-decoration: underline;
 }
+
+/* Media Queries pour mobile */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        max-width: 340px;
+        padding: 25px 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .login-container input {
+        padding: 12px;
+        font-size: 16px; /* Empêche le zoom sur iOS */
+        min-height: 44px;
+    }
+
+    .login-container button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .login-container h2 {
+        font-size: 18px;
+    }
+}
